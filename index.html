@@ -16,11 +16,17 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
+ <!-- Google Fonts
+ ================================================== -->
+ <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/animate.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,36 +41,40 @@
 
 </head>
 <body>
-<div id="header">
+
+<div id="header" class="animated fadeInDown">
 	<div class="container">
 		<div class="three columns">
 			<div class="logo">
-				<a href="#"><img src="images/logo.png" /></a>
+			<a href="#"><img src="images/logo.png" /></a>
 			</div>
 		</div>
-	<div class = "thirteen columns">
-		<nav>
-			<ul>
-				<li><a href="#">Sign In</a></li>
-				<li><a href="#">Sign Up Now</a></li>
-			</ul>
-		</nav>
+		<div class = "thirteen columns">
+			<nav>
+				<ul>
+					<li><a href="#">Sign In</a></li>
+					<li><a class="btn" href="#">Sign Up Now</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
-</div>
-<div class="container">
-	<div class="nine columns">
+
+	<div class="container">
+		<div class="nine columns headertext animated fadeInDown">
 		<h1>An Easier Way To Collaborate</h1>
 		<p>Put down the pen and paper. Jott.ly helps you organize your <strong>life, home and office</strong>. It's a simple way to store and share ideas with your loved ones, friends and colleagues.</p>
+		</div>
 	</div>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="five columns alpha">
+
+	<div class="container">
+		<div class="row">
+			<div class="five columns alpha">
 			<input type="text" placeholder="Enter your email address"/>
-        </div>
-		<div class="four columns omega">
+        	</div>
+			<div class="four columns omega">
 			<button type="submit">Sign Up Now</button>
-        </div>
+        	</div>
+		</div>
 	</div>
 </div>
 
@@ -102,8 +112,8 @@
 			<h3>Individuals &amp; Family</h3>
 			</header>
 			<section>
-	    	<h4>$2</h4>
-	    	<p>per month/per user</p>
+        <h4><span>$</span>2</h4>
+        <p>per month<br/>/per user</p>
 	    	<ul>
 	     		<li>Unlimited notes</li>
 	      		<li>Unlimited members</li>
@@ -115,13 +125,13 @@
 		</div>
 
 		<div class="one-third column">
-		<div class="pricebox">
+		<div class="pricebox deal">
 		    <header>
 		    <h3>Small Businesses</h3>
 		    </header>
 		    <section>
-		    <h4>$5</h4>
-		    <p>per month/per user</p>
+        <h4><span>$</span>5</h4>
+        <p>per month<br/>/per user</p>
 		    <ul>
 		      	<li>Unlimited notes</li>
 		      	<li>Unlimited members</li>
@@ -139,8 +149,8 @@
 			<h3>Enterprise</h3>
 			</header>
 			<section>
-			<h4>$8</h4>
-			<p>per month/per user</p>
+        <h4><span>$</span>utf-8</h4>
+        <p>per month<br/>/per user</p>
 			<ul>
 			 	<li>Unlimited notes</li>
 			  	<li>Unlimited members</li>
@@ -159,31 +169,46 @@
 -->
 
 <div id="testimonials">
-	<h2>Who's using it?</h2>
-	<p>Jott.ly has around 150,000 satisfied customers sharing and collaborating with teams throughout 35 countries. Here’s what a few had to say:</p>
-	<blockquote>
-    “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-    </blockquote>
-    <div class="avatar">
-    <img src="images/avatar1.jpg" />
-    <p>Danny S.</p>
-  </div>
+	<div class="container">
+	    <div class="twelve columns offset-by-two">
+		<h2>Who's using it?</h2>
+		<p>Jott.ly has around 150,000 satisfied customers sharing and collaborating with teams throughout 35 countries. Here’s what a few had to say:</p>
+		</div>
 
-   <blockquote>
-    “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-  </blockquote>
-  <div class="avatar">
-    <img src="images/avatar2.jpg" alt="Jonathan M."  />
-    <p>Jonathan M.</p>
-  </div>
-   
-  <blockquote>
-    “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-  </blockquote>
-  <div class="avatar">
-    <img src="images/avatar3.jpg" alt="Chloe P."  />
-    <p>Chloe P.</p>
-  </div>
+		<div class="one-third column">
+			<blockquote>
+		    “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		    </blockquote>
+
+		    <div class="avatar">
+		    <img src="images/avatar1.jpg" />
+		    <p>Danny S.</p>
+		    </div>
+		</div>
+
+		<div class="one-third column">
+			<blockquote>
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+			</blockquote>
+
+			<div class="avatar">
+			<img src="images/avatar2.jpg" alt="Jonathan M."  />
+			<p>Jonathan M.</p>
+			</div>
+		</div>
+			
+		<div class="one-third column">
+			<blockquote>
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+			</blockquote>
+			
+			<div class="avatar">
+	    	<img src="images/avatar3.jpg" alt="Chloe P."  />
+	    	<p>Chloe P.</p>
+			</div>
+		</div>
+  
+	</div>
 </div>
 
 
@@ -191,26 +216,48 @@
 -->
 
 <div id = "action">
- 	<h2>Give it a try before you commit.</h2>
-    <p>You can test drive Jott.ly before deciding on one of our plans. Just give us your email address, and we'll send you the details:</p>
-    <input type="text" placeholder="Enter your email address" />
-    <button type="submit">Sign Up Now!</button>
+	<div class="container">
+		<div class="twelve columns offset-by-two">
+ 		<h2>Give it a try before you commit.</h2>
+    	<p>You can test drive Jott.ly before deciding on one of our plans. Just give us your email address, and we'll send you the details:</p>
+    	<div class="container">
+            <div class="row">
+              <div class="eight columns alpha">
+                <input type="text" placeholder="Enter your email address"/>
+              </div>
+              <div class="four columns omega">
+                <button type="submit">Sign Up Now</button>
+              </div>
+            </div>
+          </div>
+    	</div>
+    </div>
 </div>
 
 <!-- Fotter
 -->
 
-<div id = "footer">
-	  <nav>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms</a></li>
-    </ul>
-    <img src="images/small_logo.png" />
-  	<p>&copy; 2014. Jott.ly. All Rights Reserved.</p>
-  </nav>
+<div id="footer">
+  <div class="container">
+    <div class="twelve columns">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+ 
+    <div class="two columns">
+      <img src="images/small_logo.png" alt="Jottly" />
+    </div>
+ 
+    <div class="two columns">
+      <p>&copy; 2014. Jott.ly. All Rights Reserved.</p>
+    </div>
+  </div>
 </div>
 
 </body>
